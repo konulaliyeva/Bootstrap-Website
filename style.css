@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #28285e;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+}
+.start-page-content h1 {
+  margin: 30px 0;
+}
+
+.list-of-nav {
+  display: flex;
+  margin-top: 10px;
+}
+.list-of-nav li a {
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+.list-of-nav li a:hover {
+  color: #1abc9c;
+  transition: 0.2s linear;
+}
+
+.start-page {
+  background-color: #1abc9c;
+}
+.start-page-content {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0px;
+}
+/* Star icon ----> start page & about page*/
+.star-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.left-line,
+.right-line {
+  height: 3px;
+  width: 80px;
+  background-color: #fff;
+}
+.star-icon .fa-star {
+  font-size: 25px;
+  margin: 0 10px;
+  transform: translateY(-10px);
+}
+
+/* Star icon -----> portifolio page & contact page */
+.star-icon-black {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.left-line-black,
+.right-line-black {
+  height: 3px;
+  width: 80px;
+  background-color: #000;
+}
+.star-icon-black .fa-star {
+  font-size: 25px;
+  margin: 0 10px;
+  transform: translateY(-10px);
+}
+
+.portifolio-page {
+  height: 900px;
+}
+.portifolio-page-content h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.grid-items {
+  text-align: center;
+}
+.grid-item {
+  margin-bottom: 30px;
+}
+.grid-pic:hover {
+  background-color: #1abc9c;
+}
+/* Portifolio hover state */
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  visibility: visible;
+  padding: 0 10px;
+}
+
+.grid-item-hover {
+  position: absolute;
+  top: 0;
+  left: 13px;
+  right: 0;
+  bottom: 0;
+  background-color: #1abc9c;
+  height: 300px;
+  width: 450px;
+  display: none;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.grid-item:hover .grid-item-hover {
+  display: block;
+}
+.grid-item-hover .fa-magnifying-glass-plus {
+  color: #fff;
+  font-size: 40px;
+  opacity: 1;
+  transform: translateY(140px);
+  z-index: 1;
+}
+
+.about {
+  background: #1abc9c;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+}
+.about h2 {
+  padding-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+.left-content {
+  width: 40%;
+}
+.right-content {
+  width: 40%;
+}
+
+.btn-download {
+  padding: 15px 40px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  margin: 40px 0;
+}
+.btn-download:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.2s linear;
+}
+.contact-info-page {
+  text-align: center;
+}
+.contact-info-page h2 {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.input {
+  border: none;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.btn-send {
+  width: 70px;
+  height: 50px;
+  margin: 70px 17px;
+  background-color: #1abc9c;
+  color: #fff;
+  border-radius: 5px;
+}
+/* Footer part style */
+
+.footer-upper-content {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #fff;
+  background-color: #28285e;
+  padding: 60px 0;
+}
+.footer-content h4 {
+  text-transform: uppercase;
+}
+.freelancer p {
+  width: 50%;
+  margin-left: 200px;
+}
+
+.footer-grid-items {
+  color: #fff;
+  grid-gap: 20px;
+}
+
+.footer-grid-items h4 {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.footer-icons {
+  display: flex;
+}
+
+.footer-icons .fa-brands {
+  background-color: transparent;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 60px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-icons .fa-brands:hover {
+  color: #28285e;
+  background-color: #fff;
+  border: 50%;
+}
+.footer-bottom-content {
+  text-align: center;
+  background-color: #14143b;
+  color: #fff;
+  padding: 15px 0;
+}
+.footer-grid-text p {
+  font-size: 15px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.9);
+}
