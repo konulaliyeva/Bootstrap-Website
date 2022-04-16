@@ -16,6 +16,9 @@
   width: 100%;
   z-index: 2000;
 }
+.start-page p {
+  font-size: 17px;
+}
 .start-page-content h1 {
   margin: 30px 0;
 }
@@ -117,6 +120,7 @@
   display: none;
   opacity: 0.7;
   z-index: 0;
+  transition: all 0.2s linear;
 }
 
 .grid-item:hover .grid-item-hover {
@@ -143,6 +147,7 @@
 .about-content {
   display: flex;
   justify-content: space-evenly;
+  font-size: 17px;
 }
 .left-content {
   width: 40%;
@@ -181,8 +186,8 @@
   margin-bottom: 5px;
 }
 .btn-send {
-  width: 70px;
-  height: 50px;
+  width: 80px;
+  height: 45px;
   margin: 70px 17px;
   background-color: #1abc9c;
   color: #fff;
@@ -223,8 +228,9 @@
   background-color: transparent;
   font-size: 30px;
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 40px;
   color: rgba(255, 255, 255, 0.9);
+  z-index: 100;
 }
 
 .footer-icons .fa-brands:hover {
@@ -239,7 +245,84 @@
   padding: 15px 0;
 }
 .footer-grid-text p {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 100;
   color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive design */
+
+@media screen and (min-width: 748px) and (max-width: 1181px) {
+  .header h1 {
+    text-align: center;
+    transform: translateX(70%);
+  }
+  .start-page p {
+    font-size: 15px;
+  }
+  .list-of-nav {
+    display: none;
+  }
+  .portifolio-page {
+    height: 2150px;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+  }
+  .about-content p {
+    margin-bottom: 30px;
+  }
+
+  .footer-grid-item {
+    margin-bottom: 50px;
+  }
+  .footer-icons {
+    margin-left: 350px;
+  }
+  .footer-grid-text p {
+    font-size: 15px;
+  }
+  .footer-icons .fa-brands {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 485px) and (max-width: 747px) {
+  .header h1 {
+    text-align: center;
+    transform: translateX(45%);
+  }
+  .start-page p {
+    font-size: 13px;
+  }
+  .list-of-nav {
+    display: none;
+  }
+  .portifolio-page {
+    height: 2150px;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+  }
+  .about-content p {
+    margin-bottom: 30px;
+  }
+  .footer-grid-item {
+    margin-bottom: 50px;
+  }
+  .footer-icons {
+    margin-left: 50px;
+  }
+  .footer-grid-text p {
+    font-size: 13px;
+  }
+  .footer-icons .fa-brands {
+    font-size: 20px;
+  }
 }
